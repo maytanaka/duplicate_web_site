@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* 共通部分 */
+html{
+  font-size: 100%
+}
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  line-height:1.7;
+  color: #13191b;
+  font-size: 13px;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #13191b;
+}
+img{
+  max-width: 100%;
+}
+div{
+  display: block;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+}
+/* HEADER */
+.logo{
+  width: 250px;
+  margin-top: 50px;
+}
+.mainvisual__header-menu{
+  display:flex;
+  font-size: 14px;
+  text-transform: uppercase;
+  list-style: none;
+  margin-top: 75px;
+}
+.mainvisual__header li{
+  margin-left: 50px;
+}
+.mainvisual__header a{
+  color: #dddddd;
+  font-size: 14px;
+  padding-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+.mainvisual__header li:hover{
+  border-bottom: 2px solid;
+  color: #dddddd;
+  padding-bottom: 7px;
+  transition: 0.3s ;
+}
+.mainvisual__header{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+/* Contact */
+#contact{
+  background-image: url(images/contactbg2.JPG);
+  height: 359px;
+}
+#contact .page-title{
+  text-align: center;
+}
+.contact{
+  background-color: #f6f6f6;
+  padding-top: 110px;
+}
+.contact__title{
+  max-width: 786px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact__title-text{
+  float: left;
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 17px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+}
+.contact__address{
+  max-width: 786px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact__address-text{
+  margin-top: 110px;
+  font-size: 16px;
+}
+.contact__address-text a{
+  text-decoration: underline;
+  padding-bottom: 0;
+}
+/* BackToTop */
+.BackToTop{
+  padding:110px 0 140px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.BackToTop__button a:hover{
+  background-color: #13191b;
+  color: #ffff;
+  transition: 0.3s;
+}
+.BackToTop__button-BackToTop{
+  display: inline-block;
+  width: 210px;
+  height: 46px;
+  line-height: 48px;
+  font-size: 14px;
+  color: #13191b;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  border: 1px solid #13191b;
+}
+/* SHARE */
+.share{
+  background-color: #fff;
+  padding:30px 0;
+  position: relative;
+  text-align: center;
+}
+.backTop{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  overflow: hidden;
+  text-indent: 100%;
+  background: url(images/backTop.jpg) no-repeat;
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.shareButtons__item{
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.mainbutton__facebook {
+  color: #4871a9;
+  border-color: #4871a9;
+  width: 162px;
+  padding: 13px 13px;
+  margin: 0 15px;
+  height: 46px;
+  line-height: 48px;
+  font-size: 14px;
+  border: 1px solid;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.shareButtons__item-facebook a:hover{
+  background-color: #4871a9;
+  color: #fff;
+  transition: 0.3s;
+}
+.mainbutton__twitter {
+  color: #70bdd3;
+  border-color: #70bdd3;
+  width: 162px;
+  padding: 13px 15px;
+  margin: 0 15px;
+  height: 46px;
+  line-height: 48px;
+  font-size: 14px;
+  border: 1px solid;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.shareButtons__item-twitter a:hover{
+  background-color: #70bdd3;
+  color: #fff;
+  transition: 0.3s;
+}
+.mainbutton__hatena {
+  color: #2f9bcd;
+  border-color: #2f9bcd;
+  width: 162px;
+  padding: 13px 15px;
+  margin: 0 15px;
+  height: 46px;
+  line-height: 48px;
+  font-size: 14px;
+  border: 1px solid;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.shareButtons__item-hatena a:hover{
+  background-color: #2f9bcd;
+  color: #fff;
+  transition: 0.3s;
+}
+.footerNav{
+  background-color: #939899;
+  text-align: center;
+}
+/* footerNav */
+.mainnavigation ul{
+  padding: 30px 0;
+  list-style-type: none;
+}
+.mainnavigation li{
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mainnavigation li a{
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+}
+/* Footer */
+.footer{
+  background-color: #656c6e;
+  padding: 35px 0;
+}
+.mainvisual__footer{
+  max-width: 786px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footerLogo{
+  float: left;
+}
+.siteLogo {
+  width: 85px;
+  height: 85px;
+}
+.copyRight{
+  color: #fff;
+  padding-top: auto;
+  text-align: right;
+  float: right;
+  padding-top: 35px;
+}
