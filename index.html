@@ -6,12 +6,17 @@
     <link rel="icon" type="image/png"href="images/favicon.png">
     <!-- CSS -->
     <link rel="stylesheet" href="http://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="home" class="mainvisual">
+    <div class="menuBar">
+      <p>MENU</p>
+      <img src="images/humberger.png" alt="">
+    </div>
+    <div id="home">
+      <img class="mainLogo" src="images/footerlogo.png" alt="メインLOGO">
       <header class="mainvisual__header">
         <a href="index.html"><img class="logo" src="images/logo.png" alt="PAS-POL ホーム"</a>
         <nav>
@@ -78,7 +83,8 @@
             <div class="productList__item-image">
               <img src="images/m-productList1.jpg">
             </div>
-            <h2 class="m-productList-item-title">The World<br>Festival Guide -<br>海外の音楽フェス完<br>全ガイド-</h2>
+            <h2 class="productList__item-title">The World<br>Festival Guide -<br>海外の音楽フェス完<br>全ガイド-</h2>
+            <h2 class="productList__item-title-media">The World Festival Guide -海外の音楽フェス完全ガイド-</h2>
             <p class="m-productList-item-description"></p>
           </a>
         </article>
@@ -87,7 +93,8 @@
             <div class="productList__item-image">
               <img src="images/m-productList2.jpg">
             </div>
-            <h2 class="m-productList-item-title">この世界で死ぬまでに<br>したいこと2000</h2>
+            <h2 class="productList__item-title">この世界で死ぬまでに<br>したいこと2000</h2>
+            <h2 class="productList__item-title-media">この世界で死ぬまでにしたいこと2000</h2>
             <p class="m-productList-item-description"></p>
           </a>
         </article>
@@ -96,7 +103,8 @@
             <div class="productList__item-image">
               <img src="images/m-productList3.jpg" >
             </div>
-            <h2 class="m-productList-item-title">365日日本一周 絶景<br>日めくりカレンダー</h2>
+            <h2 class="productList__item-title">365日日本一周 絶景<br>日めくりカレンダー</h2>
+            <h2 class="productList__item-title-media">365日日本一周 絶景日めくりカレンダー</h2>
             <p class="m-productList-item-description"></p>
           </a>
         </article>
@@ -105,7 +113,8 @@
             <div class="productList__item-image">
               <img src="images/m-productList4.jpg">
             </div>
-            <h2 class="m-productList-item-title">PASSPORT<br>NOTEBOOK<br>series</h2>
+            <h2 class="productList__item-title">PASSPORT<br>NOTEBOOK<br>series</h2>
+            <h2 class="productList__item-title-media">PASSPORT NOTEBOOK series</h2>
             <p class="m-productList-item-description"></p>
           </a>
         </article>
@@ -114,7 +123,8 @@
             <div class="productList__item-image">
               <img src="images/m-productList5.jpg">
             </div>
-            <h2 class="m-productList-item-title">ひとり旅英会話<br>BOOK</h2>
+            <h2 class="productList__item-title">ひとり旅英会話<br>BOOK</h2>
+            <h2 class="productList__item-title-media">ひとり旅英会話BOOK</h2>
             <p class="m-productList-item-description"></p>
           </a>
         </article>
@@ -123,10 +133,14 @@
             <div class="productList__item-image">
               <img src="images/m-productList6.jpg">
             </div>
-            <h2 class="m-productList-item-title">日本の絶景ポストカード　春編</h2>
+            <h2 class="productList__item-title">日本の絶景ポストカード　春編</h2>
+            <h2 class="productList__item-title-media">日本の絶景ポストカード 　春編</h2>
             <p class="m-productList-item-description"></p>
           </a>
         </article>
+        <div class="sectionTitle__button-media">
+          <a href="#" class="sectionTitle__button-more-media">MORE</a>
+        </div>
       </div>
     </section>
     <!-- News -->
@@ -214,6 +228,7 @@
                 現在2400件を突破しました!たく..."
               </p>
             </div>
+
           </a>
         </article>
         <article class="newsList__item">
@@ -236,6 +251,9 @@
           </a>
         </article>
       </div>
+      <div class="sectionTitle__button-media">
+        <a href="#" class="sectionTitle__button-more-media">MORE</a>
+      </div>
     </section>
     <!-- Share -->
     <div class="share">
@@ -250,10 +268,41 @@
       <div class="shareButtons__item shareButtons__item-hatena">
         <a href="#"class="mainbutton__hatena" target="_blank" onclick="ga('send','event','share_hatena','click');">Hatena Bookmark</a>
       </div>
+      <div class="shareButtons__item-media shareButtons__item-facebook">
+        <a href="#"class="mainbutton__facebook" target="_blank" onclick="ga('send','event','share_facebook','click');">Share on Facebook</a>
+      </div>
+      <div class="shareButtons__item-media shareButtons__item-twitter">
+        <a href="#"class="mainbutton__twitter" target="_blank" onclick="ga('send','event','share_twitter','click');">Share on Twitter</a>
+      </div>
+      <div class="shareButtons__item-media shareButtons__item-hatena">
+        <a href="#"class="mainbutton__hatena" target="_blank" onclick="ga('send','event','share_hatena','click');">Hatena Bookmark</a>
+      </div>
+      <div class="shareButtons__item-media shareButtons__item-line">
+        <a href="#"class="mainbutton__line" target="_blank" onclick="ga('send','event','share_line','click');">Send to LINE</a>
+      </div>
     </div>
     <!-- Footer Nav-->
     <footer class="footerNav">
       <nav class="mainnavigation">
+        <ul>
+          <li>
+            <a href="#">TOP</a>
+          </li>
+          <li>
+            <a href="#">PRODUCT</a>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">NEWS</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mainnavigation__media">
         <ul>
           <li>
             <a href="#">TOP</a>
